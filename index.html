@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Minimalist Todo App</h1>
+    </header>
+    <main>
+      <section class="task-input">
+        <input type="text" id="task-name" placeholder="Enter task name">
+        <input type="date" id="task-date">
+        <select id="task-category">
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="School">School</option>
+          <option value="Others">Others</option>
+        </select>
+        <button id="add-task">Add Task</button>
+      </section>
+
+      <section class="statistics">
+        <h2>Statistics</h2>
+        <p>Total Tasks: <span id="total-tasks">0</span></p>
+        <p>Completed Tasks: <span id="completed-tasks">0</span></p>
+        <p>Overdue Tasks: <span id="overdue-tasks">0</span></p>
+      </section>
+
+      <section class="task-list">
+        <h2>Task List</h2>
+        <ul id="tasks"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
